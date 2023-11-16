@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sneaker Shop</h1>
+    </header>
+
+    <section id="products">
+        <article class="product">
+            <img src="sneaker1.jpg" alt="Sneaker 1">
+            <h2>Sneaker 1</h2>
+            <p>$100</p>
+            <button onclick="addToCart('Sneaker 1', 100)">Add to Cart</button>
+        </article>
+
+        <article class="product">
+            <img src="sneaker2.jpg" alt="Sneaker 2">
+            <h2>Sneaker 2</h2>
+            <p>$120</p>
+            <button onclick="addToCart('Sneaker 2', 120)">Add to Cart</button>
+        </article>
+
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
